@@ -1,0 +1,12 @@
+services:
+  streamlit:
+    build: .
+    ports:
+      - "9191:8501"
+    volumes:
+      - ./snowflake-apps/src:/app
+    environment:
+      - OPENAI_API_KEY=$OPENAI_API_KEY
+      - SNOWFLAKE_ACCOUNT=$SNOWFLAKE_ACCOUNT
+      - SNOWFLAKE_USERNAME=$SNOWFLAKE_USERNAME
+      - SNOWFLAKE_PASSWORD=$SNOWFLAKE_PASSWORD

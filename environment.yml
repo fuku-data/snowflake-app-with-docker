@@ -1,0 +1,14 @@
+name: snowflake-env
+channels:
+    - https://repo.anaconda.com/pkgs/snowflake
+dependencies:
+    - python=3.9
+    - numpy
+    - pandas
+    - snowflake-snowpark-python
+    - pip
+    - pip:
+        - langchain
+        - openai
+        - plotly
+        - streamlit
